@@ -24,7 +24,7 @@ class Load_MatForger:
     def INPUT_TYPES(cls):
         return {
             "required": {
-                "repo_id": ("STRING",{"default": "gvecchio/MatForger"}),
+                "repo_id": ("STRING",{"default": ".//models/diffusers/MatForger"}),
             }
         }
 
@@ -94,14 +94,15 @@ class MatForger_Sampler:
                 num_inference_steps=step,
                 
             ).images[0]
-            prefix= ''.join(random.choice("0123456789abcdefg") for _ in range(6))
+            prefix = ''.join(random.choice("0123456789abcdefg") for _ in range(6))
+            prefix2 = ''.join(".png")
             if Save_with_prefix:
-                print(f"save mat in name {prefix}")
-                image.basecolor.save(folder_paths.get_input_directory(),f"basecolor_{prefix}")
-                image.normal.save(folder_paths.get_input_directory(),f"normal{prefix}")
-                image.height.save(folder_paths.get_input_directory(),f"height{prefix}")
-                image.roughness.save(folder_paths.get_input_directory(),f"roughness{prefix}")
-                image.metallic.save(folder_paths.get_input_directory(),f"metallic{prefix}")
+                print(f".//output/save mat in name{prefix}{prefix2}","PNG")
+                image.basecolor.save(f".//output/MatForger-{prefix}-basecolor{prefix2}","PNG")
+                image.normal.save(f".//output/MatForger-{prefix}-normal{prefix2}","PNG")
+                image.height.save(f".//output/MatForger-{prefix}-height{prefix2}","PNG")
+                image.roughness.save(f".//output/MatForger-{prefix}-roughness{prefix2}","PNG")
+                image.metallic.save(f".//output/MatForger-{prefix}-metallic{prefix2}","PNG")
                 
             image_RGB_list.append([image.basecolor, image.normal])
             image_L_list.append([image.height, image.roughness, image.metallic])
@@ -134,3 +135,4 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "Load_MatForger":"Load_MatForger",
     "MatForger_Sampler": "MatForger_Sampler",
 }
+
