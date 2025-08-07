@@ -4,8 +4,8 @@ Use comfyUI make PBR materials..
 Updated to output files to Comfyui outputs folder with material type and random prefix in name.
 Also updated to find model in ComfyUI's models/diffusers/MatForger folder.
 Still need to download models from https://modelscope.cn/models/smthem/MatForger/files .
-I'm a beginner coder,and jsut wanted to make it work like I think it was intended to.
-You can jsut copy my updated MatForger_node.py to your folder if you already have it installed.
+I'm a beginner coder,and just wanted to make it work like I think it was intended to.
+You can just copy my updated MatForger_node.py to your folder if you already have it installed.
 ----
 
 1.Installation  (original install)
@@ -17,8 +17,9 @@ git clone https://github.com/smthemex/ComfyUI_PBR_Maker
 ```
 2.checkpoints 
 ----
-No longer working.Use https://modelscope.cn/models/smthem/MatForger/files
+Use https://modelscope.cn/models/smthem/MatForger/files instead.
 
+Old huggingface site no longer working:
 download [gvecchio/MatForger](https://huggingface.co/gvecchio/MatForger) 
 
 ```
@@ -44,7 +45,7 @@ Keeps things a bit more organized.
 
 3.Example:
 ----
-Right click and swap  Save Image with Preview Image,so there's not 2 sets of textures in output folder.
+Right click and swap Save Image to Preview Image,so there's not 2 sets of textures in output folder.
 
 ![](https://github.com/smthemex/ComfyUI_PBR_Maker/blob/main/example.png)
 
