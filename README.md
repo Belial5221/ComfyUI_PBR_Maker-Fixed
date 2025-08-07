@@ -1,6 +1,10 @@
 # ComfyUI_PBR_Maker
 Use comfyUI make PBR materials..
 
+Updated to output files to Comfyui outputs folder with material type and random prefix in name.
+Also updated to find model in ComfyUI's models/diffusers/MatForger folder.
+Still need to download models from https://modelscope.cn/models/smthem/MatForger/files .
+I'm a beginner coder,and jsut wanted to make it work like I think it was intended to.
 ----
 
 1.Installation  
