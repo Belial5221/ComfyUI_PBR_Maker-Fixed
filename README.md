@@ -5,12 +5,14 @@ Updated to output files to Comfyui outputs folder with material type and random 
 Also updated to find model in ComfyUI's models/diffusers/MatForger folder.
 Still need to download models from https://modelscope.cn/models/smthem/MatForger/files .
 I'm a beginner coder,and jsut wanted to make it work like I think it was intended to.
+You can jsut copy my updated MatForger_node.py to your folder if you already have it installed.
 ----
 
-1.Installation  
+1.Installation  (original install)
 -----
   In the ./ComfyUI /custom_node directory, run the following:   
 ```
+
 git clone https://github.com/smthemex/ComfyUI_PBR_Maker
 ```
 2.checkpoints 
