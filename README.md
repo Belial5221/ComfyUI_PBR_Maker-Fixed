@@ -17,9 +17,14 @@ git clone https://github.com/smthemex/ComfyUI_PBR_Maker
 ```
 2.checkpoints 
 ----
+No longer working.Use https://modelscope.cn/models/smthem/MatForger/files
+
 download [gvecchio/MatForger](https://huggingface.co/gvecchio/MatForger) 
 
 ```
+Best to put it in models/diffusers/MatForger now,instad of anypath/MatForger.
+Keeps things a bit more organized.
+
 ├── anypath/MatForger
 |     ├── prompt_encoder
 |           ├── config.json
@@ -39,6 +44,8 @@ download [gvecchio/MatForger](https://huggingface.co/gvecchio/MatForger)
 
 3.Example:
 ----
+Right click and swap  Save Image with Preview Image,so there's not 2 sets of textures in output folder.
+
 ![](https://github.com/smthemex/ComfyUI_PBR_Maker/blob/main/example.png)
 
 4.Citation
